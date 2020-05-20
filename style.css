@@ -58,7 +58,8 @@ body {
     line-height: 24px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6,
+input:not([type]), input[type="submit"] {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
 }
@@ -66,6 +67,18 @@ h1, h2, h3, h4, h5, h6 {
 h1, h2 {
     font-size: 40px;
     line-height: 60px;
+}
+
+input:not([type]), input[type="submit"],
+.cta,
+footer,
+.footer-links a {
+    color: #FFFFFF;
+}
+
+input:not([type]), input[type="submit"] {
+    font-size: 14px;
+    background-color: #2F65F8;
 }
 
 /**********
@@ -84,6 +97,10 @@ HERO
 PRODUCTIVE
 **********/
 
+.productive {
+    background-image: url(./images/bg-curve-desktop.svg);
+}
+
 .productive a {
     color: #3DA08F;
 }
@@ -91,6 +108,12 @@ PRODUCTIVE
 .testimonial {
     font-size: 13px;
     line-height: 23px;
+    background-color: #FFFFFF;
+}
+
+.quotation::before {
+    content: url(./images/icon-quotes.svg);
+    display: block;
 }
 
 .reviewer strong {
@@ -98,13 +121,55 @@ PRODUCTIVE
     font-weight: 700;
 }
 
+
+
 /**********
 CTA
 **********/
+.cta {
+    background-color: #575988;
+    display: flex;
+    flex-direction: row;
+}
+
+.cta h2 {
+    font-size: 32px;
+    line-height: 48px;
+}
+
 
 /**********
 FOOTER
 **********/
+footer {
+    background-color: #07043B;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-links ul {
+    list-style-type: none;
+}
+
+.list-phone {
+    list-style-image: url(./images/icon-phone.svg);
+}
+
+.list-email {
+    list-style-image: url(./images/icon-email.svg);
+}
+
+
+.footer-links a {
+    text-decoration: none;
+}
+
+.social-icons li {
+    display: inline;
+}
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
@@ -112,3 +177,9 @@ FOOTER
 /**********
 RESPONSIVE
 **********/
+
+@media (max-width: 600px) {
+    .productive {
+        background-image: url(./images/bg-curve-mobile.svg);
+    }
+}

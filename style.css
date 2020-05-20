@@ -40,5 +40,75 @@ The designs were created to the following widths:
 
 */
 
+/**********
+GENERAL
+**********/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #07043B;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+h1, h2 {
+    font-size: 40px;
+    line-height: 60px;
+}
+
+/**********
+HEADER
+**********/
+
+/**********
+HERO
+**********/
+.hero p {
+    font-size: 17px;
+    letter-spacing: 0.53px;
+}
+
+/**********
+PRODUCTIVE
+**********/
+
+.productive a {
+    color: #3DA08F;
+}
+
+.testimonial {
+    font-size: 13px;
+    line-height: 23px;
+}
+
+.reviewer strong {
+    font-size: 11px;
+    font-weight: 700;
+}
+
+/**********
+CTA
+**********/
+
+/**********
+FOOTER
+**********/
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+/**********
+RESPONSIVE
+**********/

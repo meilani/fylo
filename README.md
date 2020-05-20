@@ -2,7 +2,7 @@
 
 ## Challenge: 
 
-Bbuild out this landing page from the designs provided in the starter code.
+Build out the landing page from the sketch file.
 
 
 ## Frontend Mentor: 

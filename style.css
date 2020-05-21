@@ -56,7 +56,7 @@ body {
     font-size: 16px;
     line-height: 24px;
     width: 100vw;
-    padding: 65px 80px;
+    padding-top: 65px;
 }
 
 body,
@@ -83,19 +83,53 @@ footer,
 }
 
 input:not([type]), input[type="submit"] {
-    font-size: 14px;
     background-color: #2F65F8;
+    border: none;
+    width: 200px;
+    padding: 15px 60px;
+    text-align: center;
+
+}
+
+input:not([type]), input[type="email"] {
+    width: 320px;
+    border: 1px solid #07043B;
+    padding: 15px 20px;
+    margin-right: 15px;
+    color: #c2c2c2;
+}
+
+input:not([type]), input[type="submit"],
+input:not([type]), input[type="email"] {
+    border-radius: 3px;
+    font-size: 14px;
 }
 
 header,
 .footer-links,
-.cta {
+.cta,
+.hero,
+.productive {
     display: flex;
+}
+
+header,
+.hero,
+.productive,
+.cta,
+footer {
+    padding-left: 80px;
+    padding-right: 80px;
 }
 
 nav ul li,
 .social-icons li {
     display: inline;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
 }
 
 /**********
@@ -118,10 +152,18 @@ nav ul li a {
 /**********
 HERO
 **********/
+
+.hero {
+    margin-bottom: 165px;
+}
+
 .hero p {
     font-size: 17px;
     letter-spacing: 0.53px;
+    margin-bottom: 25px;
 }
+
+
 
 /**********
 PRODUCTIVE
@@ -129,7 +171,13 @@ PRODUCTIVE
 
 .productive {
     background-image: url(./images/bg-curve-desktop.svg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 180px;
 }
+
+
 
 .productive a {
     color: #3DA08F;

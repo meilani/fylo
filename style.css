@@ -181,7 +181,15 @@ PRODUCTIVE
 
 .productive a {
     color: #3DA08F;
+    text-decoration: none;
 }
+
+.works-links {
+    border-bottom: 1px solid #3DA08F;
+    display: inline-block;
+}
+
+
 
 .testimonial {
     font-size: 13px;

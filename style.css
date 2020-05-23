@@ -189,6 +189,7 @@ HERO
 
 .hero-image {
     max-width: 640px;
+    margin-left: 50px;
 }
 
 
@@ -226,8 +227,6 @@ PRODUCTIVE
     display: inline-block;
     margin-bottom: 45px;
 }
-
-
 
 .testimonial {
     font-size: 13px;
@@ -270,6 +269,7 @@ PRODUCTIVE
 
 .productive-image {
     max-width: 542px;
+    margin-left: 50px;
 }
 
 
@@ -381,7 +381,7 @@ RESPONSIVE
 **********/
 
 
-@media (max-width: 700px) {
+@media (max-width: 850px) {
 /*****************
 RESPONSIVE GENERAL
 *****************/
@@ -424,12 +424,13 @@ RESPONSIVE HERO
 
 .hero-image {
     margin-bottom: 40px;
+    margin-left: 0;
     max-width: 450px;
     width: 100%;
 }
 
 .hero-text {
-    max-width: 100%;
+    max-width: 450px;
 }
 
 .hero-text h1 {
@@ -470,9 +471,14 @@ RESPONSIVE PRODUCTIVE
     align-items: center;
 }
 
+.productive-text,
+.productive-image {
+    max-width: 450px;
+}
+
 .productive-image {
     margin-bottom: 90px;
-    max-width: 450px;
+    margin-left: 0;
 }
 
 .productive-text h2 {
@@ -493,9 +499,64 @@ RESPONSIVE PRODUCTIVE
 RESPONSIVE CTA
 *****************/
 
+.cta {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 54px;
+    padding-bottom: 70px;
+}
+
+.cta-text,
+.cta-form {
+    max-width: 450px;;
+}
+
+.cta-text h2 {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.cta-text p {
+    margin-bottom: 24px;
+}
+
+#cta-email,
+#cta-submit {
+    width: 100%;
+}
+
+
+
 /*****************
 RESPONSIVE FOOTER
 *****************/
+
+footer {
+    padding: 64px 40px 15px 40px;
+    flex-direction: column;
+    justify-content: start;
+    text-align: left;
+    font-size: 16px;
+}
+
+.footer-logo {
+    margin-bottom: 40px;
+}
+
+
+
+.footer-links {
+    flex-direction: column;
+    margin-bottom: 0;
+}
+
+.footer-links ul {
+    margin-bottom: 50px;
+}
+
+.social-icons {
+   align-self: center;
+}
 
 
 

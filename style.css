@@ -57,6 +57,7 @@ body {
     line-height: 24px;
     width: 100vw;
     padding-top: 65px;
+    letter-spacing: 0.53px;
 }
 
 body,
@@ -156,12 +157,22 @@ HERO
 
 .hero {
     margin-bottom: 165px;
+    justify-content: space-between;
+}
+
+.hero h1 {
+    max-width: 627px;
+    margin-bottom: 15px;
 }
 
 .hero p {
     font-size: 17px;
-    letter-spacing: 0.53px;
     margin-bottom: 25px;
+    max-width: 570px;
+}
+
+.hero-image {
+    max-width: 640px;
 }
 
 
@@ -190,7 +201,7 @@ PRODUCTIVE
 }
 
 .productive-text > p {
-    max-width: 529px;
+    max-width: 534px;
     margin-bottom: 16px;
 }
 
@@ -207,7 +218,7 @@ PRODUCTIVE
     line-height: 23px;
     background-color: #FFFFFF;
     padding: 25px 33px;
-    max-width: 356px;
+    max-width: 355px;
 }
 
 .quotation::before {

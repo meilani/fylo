@@ -172,6 +172,10 @@ HERO
     justify-content: space-between;
 }
 
+.hero-text {
+    max-width: 50%;
+}
+
 .hero h1 {
     max-width: 627px;
     margin-bottom: 15px;
@@ -231,6 +235,7 @@ PRODUCTIVE
     background-color: #FFFFFF;
     padding: 25px 33px;
     max-width: 355px;
+    margin: 0;
 }
 
 .quotation::before {
@@ -240,6 +245,7 @@ PRODUCTIVE
 
 .quotation {
     margin-bottom: 16px;
+    text-align: left;
 }
 
 .reviewer {
@@ -418,6 +424,12 @@ RESPONSIVE HERO
 
 .hero-image {
     margin-bottom: 40px;
+    max-width: 450px;
+    width: 100%;
+}
+
+.hero-text {
+    max-width: 100%;
 }
 
 .hero-text h1 {
@@ -440,11 +452,11 @@ RESPONSIVE HERO
 #email {
     margin-bottom: 16px;
     margin-right: 0;
-    width: 300px;
+    width: 100%;
 }
 
 #submit {
-    width: 300px;
+    width: 100%;
 }
 
 /********************
@@ -453,7 +465,28 @@ RESPONSIVE PRODUCTIVE
 .productive {
     flex-direction: column-reverse;
     background-image: url(./images/bg-curve-mobile.svg);
-    margin-top: 93px;
+    padding-top: 93px;
+    padding-bottom: 80px;
+    align-items: center;
+}
+
+.productive-image {
+    margin-bottom: 90px;
+    max-width: 450px;
+}
+
+.productive-text h2 {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.works-links {
+    margin: 40px 0;
+    font-size: 12px;
+}
+
+.testimonial {
+    margin: auto;
 }
 
 /*****************

@@ -305,14 +305,35 @@ FOOTER
 **********/
 footer {
     background-color: #07043B;
+    padding-top: 60px;
+}
+
+.footer-logo svg path {
+    fill: #fff;
+}
+
+.footer-logo {
+    margin-bottom: 24px;
 }
 
 .footer-links {
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .footer-links ul {
     list-style-type: none;
+}
+
+.footer-links ul li {
+    margin-bottom: 16px;
+}
+
+.contact-info {
+    margin-left: 24px;
+}
+
+.contact-info li {
+    padding-left: 16px;
 }
 
 .list-phone {
@@ -323,12 +344,23 @@ footer {
     list-style-image: url(./images/icon-email.svg);
 }
 
+.footer-links {
+    margin-bottom: 72px;
+}
 
 .footer-links a {
     text-decoration: none;
 }
 
-.attribution { font-size: 11px; text-align: center; }
+.social-icons li {
+    margin-left: 12px;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    padding-bottom: 15px;
+}
 .attribution a { color: hsl(228, 45%, 44%); }
 
 /**********

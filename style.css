@@ -109,7 +109,8 @@ header,
 .footer-links,
 .cta,
 .hero,
-.productive {
+.productive,
+.reviewer {
     display: flex;
 }
 
@@ -175,6 +176,8 @@ PRODUCTIVE
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 180px;
+    padding-bottom: 160px;
+    justify-content: space-between;
 }
 
 
@@ -184,9 +187,19 @@ PRODUCTIVE
     text-decoration: none;
 }
 
+.productive-text > h2 {
+    margin-bottom: 37px;
+}
+
+.productive-text > p {
+    max-width: 529px;
+    margin-bottom: 16px;
+}
+
 .works-links {
     border-bottom: 1px solid #3DA08F;
     display: inline-block;
+    margin-bottom: 45px;
 }
 
 
@@ -195,6 +208,8 @@ PRODUCTIVE
     font-size: 13px;
     line-height: 23px;
     background-color: #FFFFFF;
+    padding: 25px 33px;
+    max-width: 356px;
 }
 
 .quotation::before {
@@ -202,9 +217,32 @@ PRODUCTIVE
     display: block;
 }
 
+.quotation {
+    margin-bottom: 16px;
+}
+
+.reviewer {
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.reviewer img {
+    border-radius: 50%;
+}
+
+.reviewer-text {
+    margin-left: 8px;
+    font-size: 8px;
+    line-height: 15px;
+}
+
 .reviewer strong {
     font-size: 11px;
     font-weight: 700;
+}
+
+.productive-image {
+    max-width: 542px;
 }
 
 

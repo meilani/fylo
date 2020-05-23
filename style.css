@@ -1,43 +1,8 @@
 /*
-
-# Front-end Style Guide
-
-## Layout
-
-The designs were created to the following widths:
-
-- Mobile: 375px
-- Desktop: 1440px
-
-## Colors
-
-### Primary
-
-- Very Dark Blue: hsl(243, 87%, 12%)
-- Desaturated Blue: hsl(238, 22%, 44%)
-
-### Accent
-
-- Bright Blue: hsl(224, 93%, 58%)
-- Moderate Cyan: hsl(170, 45%, 43%)
-
-### Neutral
-
-- Light Grayish Blue: hsl(240, 75%, 98%)
-- Light Gray: hsl(0, 0%, 75%)
-
-## Typography
-
-### Headings, Call-to-actions, Header Navigation
-
-- Family: [Raleway](https://fonts.google.com/specimen/Raleway)
-- Weights: 400, 700
-
-### Body
-
-- Family: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
-- Weights: 400
-
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
 */
 
 /**********
@@ -47,7 +12,8 @@ GENERAL
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 body {
@@ -100,6 +66,26 @@ input:not([type]), input[type="email"] {
     margin-right: 15px;
 }
 
+input[type="email"]::-webkit-input-placeholder {
+    color: #c2c2c2;
+
+}
+
+input[type="email"]::-moz-placeholder {
+    color: #c2c2c2;
+
+}
+
+input[type="email"]:-ms-input-placeholder {
+    color: #c2c2c2;
+
+}
+
+input[type="email"]::-ms-input-placeholder {
+    color: #c2c2c2;
+
+}
+
 input:not([type]), input[type="email"]::placeholder {
     color: #c2c2c2;
 
@@ -118,13 +104,18 @@ header,
 .hero form,
 .productive,
 .reviewer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .hero,
 .hero form,
 .productive {
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
 }
 
 header,
@@ -151,7 +142,9 @@ HEADER
 **********/
 
 header {
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-bottom: 100px;
 }
 
@@ -169,7 +162,9 @@ HERO
 
 .hero {
     margin-bottom: 165px;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .hero-text {
@@ -205,7 +200,9 @@ PRODUCTIVE
     background-repeat: no-repeat;
     padding-top: 180px;
     padding-bottom: 160px;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .productive a {
@@ -248,8 +245,12 @@ PRODUCTIVE
 }
 
 .reviewer {
-    justify-content: flex-start;
-    align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .reviewer img {
@@ -279,8 +280,13 @@ CTA
 **********/
 .cta {
     background-color: #575988;
-    flex-direction: row;
-    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding-top: 45px;
     padding-bottom: 135px;
 }
@@ -299,6 +305,26 @@ CTA
     width: 100%;
     margin-bottom: 16px;
     color: #07043B;
+}
+
+#cta-email::-webkit-input-placeholder {
+    font-size: 12px;
+    color: #C0C0C0;
+}
+
+#cta-email::-moz-placeholder {
+    font-size: 12px;
+    color: #C0C0C0;
+}
+
+#cta-email:-ms-input-placeholder {
+    font-size: 12px;
+    color: #C0C0C0;
+}
+
+#cta-email::-ms-input-placeholder {
+    font-size: 12px;
+    color: #C0C0C0;
 }
 
 #cta-email::placeholder {
@@ -330,7 +356,9 @@ footer {
 }
 
 .footer-links {
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .footer-links ul {
@@ -417,8 +445,13 @@ RESPONSIVE HEADER
 RESPONSIVE HERO
 *****************/
 .hero {
-    flex-direction: column-reverse;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-bottom: 90px;
 }
 
@@ -446,8 +479,13 @@ RESPONSIVE HERO
 }
 
 .hero form {
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 #email {
@@ -464,11 +502,16 @@ RESPONSIVE HERO
 RESPONSIVE PRODUCTIVE
 ********************/
 .productive {
-    flex-direction: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
     background-image: url(./images/bg-curve-mobile.svg);
     padding-top: 93px;
     padding-bottom: 80px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .productive-text,
@@ -500,8 +543,13 @@ RESPONSIVE CTA
 *****************/
 
 .cta {
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-top: 54px;
     padding-bottom: 70px;
 }
@@ -533,8 +581,13 @@ RESPONSIVE FOOTER
 
 footer {
     padding: 64px 40px 15px 40px;
-    flex-direction: column;
-    justify-content: start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
     text-align: left;
     font-size: 16px;
 }
@@ -546,7 +599,10 @@ footer {
 
 
 .footer-links {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-bottom: 0;
 }
 
@@ -555,7 +611,9 @@ footer {
 }
 
 .social-icons {
-   align-self: center;
+   -ms-flex-item-align: center;
+       -ms-grid-row-align: center;
+       align-self: center;
 }
 
 
